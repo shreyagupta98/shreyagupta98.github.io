@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)https://h4sis.calblueprint.org/ -->
+
+<html class="gr__h4sis_calblueprint_org"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>BitQuest by Bit Project</title>
+        <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+
+    <link href="./files1/css" rel="stylesheet">
+    <link href="./files1/styles.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./files1/logo.png">
+    <script>
+      function switchTab(num, type) {
+        const [buttons] = document.getElementsByClassName("tab-buttons--" + type);
+        const [tabContents] = document.getElementsByClassName("tab-content--" + type);
+
+        for (let i = 0; i < buttons.children.length; i++) {
+          if (i === num) {
+            buttons.children[i].className = "tab-button tab-button--active";
+            tabContents.children[i].className = "tab-content tab-content--active";
+          } else {
+            buttons.children[i].className = "tab-button";
+            tabContents.children[i].className = "tab-content";
+          }
+        }
+      }
+
+      function checkSticky() {
+        const [navbar] = document.getElementsByTagName("nav");
+
+        if (window.pageYOffset > 0) {
+          navbar.classList.add("nav--fixed")
+        } else {
+          navbar.classList.remove("nav--fixed");
+        }
+      }
+
+      // When the user scrolls the page, execute myFunction
+      window.onscroll = checkSticky;
+    </script>
+  </head>
+  <body data-gr-c-s-loaded="true" style="zoom: 1;">
+    <nav>
+      <div class="nav-content">
+        <a href="https://h4sis.calblueprint.org/#" class="logo">
+          <img src="./files1/logo.png">
+        </a>
+        <div class="links">
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#speakers">Schedule</a>
+          <a class="nav-link" href="#faq">FAQ</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="content">
+      <a name="#"></a>
+      <div class="landing-wrapper">
+        <div class="landing">
+          <div class="caption">
+            <p>Jan-Feb 2020</p>
+          </div>
+          <h1 class="landing-title">BitQuest</h1>
+          <p class="landing-title">After School Hands-on STEM Program</p>
+          <a target="_" href="https://calblueprint.org/" class="bp-logo">
+            <p>Hosted by </p>
+            <img src="./files1/logo1.png">
+          </a>
+        </div>
+      </div>
+
+      <a name="about"></a>
+      <div class="text-section">
+        <p class="text-section__name">About:</p>
+        <div class="text-section__main">
+          <h2 class="headline">
+            Inspiring the Next Generation of Scientists, Technologists, Engineers, and Mathematicians.
+          </h2>
+        </div>
+      </div>
+
+      <div class="image-text-section">
+        <div class="image-text-section__visual">
+          <!--- IMAGE HERE -->
+          <img src="./files1/graphic-1.png" draggable="false">
+        </div>
+        <div class="image-text-section__content">
+          <h3 class="title">Vision</h3>
+          <p class="paragraph">
+             Bit Project is a UC Davis student organization that designs, develops,
+             and delivers project-based STEM education to K-5th grade students. BitQuest connects
+             the next generation of leaders with UC Davis undergraduate students and engineering
+             professors to explore and build various engineering projects.
+          </p>
+        </div>
+      </div>
+
+      <div class="image-text-section right">
+        <div class="image-text-section__content">
+          <h3 class="title">Mission</h3>
+          <p class="paragraph">
+              We want to provide younger students with equal opportunities to pursue STEM,
+              regardless of their socio-economic backgrounds. As a student-run organization based at UC Davis,
+              we hope to provide fruitful volunteering experiences for undergraduates and
+              hands-on learning experiences for elementary school students.
+          </p>
+        </div>
+        <div class="image-text-section__visual">
+          <!--- IMAGE HERE -->
+          <img src="./files1/graphic-2.png" draggable="false">
+        </div>
+      </div>
+
+      <div class="image-text-section">
+        <div class="image-text-section__content">
+          <h2 class="headline">Support Another Student’s Education</h2>
+          <p class="paragraph">
+            This April, we will be hosting our second BitQuest program accessible
+            to students from lower-income backgrounds.<br><br>
+            The proceeds from BitQuest W20 will allow students who do not have access to STEM
+            education at school and cannot afford to pay for the program to get a chance to join us in the future.
+          </p>
+        </div>
+      </div>
+
+      <a name="Program"></a>
+      <div class="text-section">
+        <p class="text-section__name">Disciplines:</p>
+        <div class="text-section__main">
+          <h2 class="headline">We provide unique, interdisciplinary science and engineering design experiences</h2>
+          <p class="subtitle">
+            We collaborate with UC Davis faculty and students to provide
+            students with unique, hands-on STEM learning opportunities.
+          </p>
+        </div>
+      </div>
+
+
+
+
+
+
+      <a name="speakers"></a>
+      <div class="text-section">
+        <p class="text-section__name">Schedule:</p>
+        <div class="text-section__main">
+          <h2 class="headline">
+            Five weeks, endless possibilities
+          </h2>
+          <p class="subtitle">
+            The BitQuest program introduces students to various engineering and science fields
+            over a period of five weeks.
+          </p>
+          <p class="subtitle">Check out the schedule below:</p>
+        </div>
+      </div>
+
+
+      <div class="speakers-section">
+        <div class="tab-buttons--side">
+          <div class="tab-button tab-button--active" onclick="switchTab(0, &#39;side&#39;)">
+            <h4 class="tab-button__title">Electrical<br>Engineering</h4>
+            <p class="tab-button__subtitle">Week 1</p>
+          </div>
+          <div class="tab-button" onclick="switchTab(1, &#39;side&#39;)">
+            <h4 class="tab-button__title">Civil<br>Engineering</h4>
+            <p class="tab-button__subtitle">Week 2</p>
+          </div>
+          <div class="tab-button" onclick="switchTab(2, &#39;side&#39;)">
+            <h4 class="tab-button__title">Aerospace<br>Engineering</h4>
+            <p class="tab-button__subtitle">Week 3</p>
+          </div>
+          <div class="tab-button" onclick="switchTab(3, &#39;side&#39;)">
+            <h4 class="tab-button__title">Computer<br>Science</h4>
+            <p class="tab-button__subtitle">Week 4</p>
+          </div>
+          <div class="tab-button" onclick="switchTab(4, &#39;side&#39;)">
+            <h4 class="tab-button__title">Biological<br>Sciences</h4>
+            <p class="tab-button__subtitle">Week 5</p>
+          </div>
+          <div class="tab-button" onclick="switchTab(4, &#39;side&#39;)">
+            <h4 class="tab-button__title">TBA</h4>
+            <p class="tab-button__subtitle">Week 6</p>
+          </div>
+        </div>
+        <div class="tab-content--side">
+          <div class="tab-content tab-content--active">
+            <h5 class="panel__title">LED Starry Lights</h5>
+            <p style="margin: 5px 0 30px 0;"><i>January 18th 2020 - 10am-12pm</i></p>
+            <p class="panel__subheading">About</p>
+            <p style="margin: 5px 0 30px 0;">
+              Join us at UC Davis, as electrical engineering and astronomy come together,
+              to learn about circuits and build your own LED starry night circuit to take home!
+              Design and create constellations using LEDs, wires, and batteries.
+            </p>
+            <p class="panel__subheading">Program</p>
+            <p class="panel__person">1. LEDs</p>
+            <p class="panel__person">2. Intro to Circuits</p>
+            <p class="panel__person">3. Constellations and Design Brainstorm</p>
+            <p class="panel__person">4. Build Your Own Starry Night Circuit</p>
+          </div>
+          <div class="tab-content">
+            <h5 class="panel__title">Buoyant Boats</h5>
+            <p style="margin: 5px 0 30px 0;"><i>January 25th 2020 - 10am-12pm</i></p>
+            <p class="panel__subheading">About</p>
+            <p style="margin: 5px 0 30px 0;">
+              Build their own boats out of aluminum foil,
+              sail them in water, and test how much weight they can hold. Students will study principles of buoyancy,
+              weight distribution, and design to build the best possible boat that hold the most pennies.
+            </p>
+            <p class="panel__subheading">Program</p>
+            <p class="panel__person">1. Buoyancy</p>
+            <p class="panel__person">2. Designing Your Boat</p>
+            <p class="panel__person">3. Testing</p>
+            <p class="panel__person">3. Optimizing Your Boat Design</p>
+          </div>
+          <div class="tab-content">
+            <h5 class="panel__title">Rocket Launch</h5>
+            <p style="margin: 5px 0 30px 0;"><i>February 1st 2020 - 10am-12pm</i></p>
+            <p class="panel__subheading">About</p>
+            <p style="margin: 5px 0 30px 0;">
+              Explore the world of aerodynamics and forces by launching their own paper rocket.
+              Students will learn to organize, plan, and build their own paper rocket with multi-colored construction paper.
+              After they finish building their own paper rocket, they will launch it with our handmade rocket launcher.
+            </p>
+            <p class="panel__subheading">Program</p>
+            <p class="panel__person">1. Aerodynamics and Forces</p>
+            <p class="panel__person">2. Designing Your Rocket</p>
+            <p class="panel__person">3. Testing</p>
+            <p class="panel__person">4. Optimizing Your Rocket Design</p>
+          </div>
+          <div class="tab-content">
+            <h5 class="panel__title">Ozobots Tracks</h5>
+            <p style="margin: 5px 0 30px 0;"><i>February 8th 2020 - 10am-12pm</i></p>
+            <p class="panel__subheading">About</p>
+            <p style="margin: 5px 0 30px 0;">
+              Learn the basic of programming and robots with Ozobots.
+              Students will explore how different colors affect
+              how the ozobots move and create tracks with different colors to make ozobots do different things.
+            </p>
+          <p class="panel__subheading">Program</p>
+            <p class="panel__person">1. Intro to Color Programming</p>
+            <p class="panel__person">2. Racing Tracks</p>
+            <p class="panel__person">3. Challenge: Build Your Own Track</p>
+            <p class="panel__person">4. Presentations</p>
+          </div>
+          <div class="tab-content">
+            <h5 class="panel__title">Cell Models</h5>
+            <p style="margin: 5px 0 30px 0;"><i>February 15th 2020 - 10am-12pm</i></p>
+            <p class="panel__subheading">About</p>
+            <p style="margin: 5px 0 30px 0;">
+              One of the ways different types of organisms are distinguished is by the cells they have.
+              Students will be learning about the differences and similarities between plant, animal,
+              and bacterial cells by splitting up into groups and constructing their own gigantic cell.
+              By building their own cell, they will be learning about the different types of organelles and their significance.
+            </p>
+            <p class="panel__subheading">Program</p>
+            <p class="panel__person">1. Types of Cells</p>
+            <p class="panel__person">2. Group Up</p>
+            <p class="panel__person">3. Build Your Own Cell Model</p>
+            <p class="panel__person">4. Presentations</p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <a name="faq"></a>
+      <div class="text-section">
+        <p class="text-section__name">Additional Info:</p>
+        <div class="text-section__main">
+          <h2 class="headline">How To Prepare?</h2>
+          <div>
+            <div class="question">
+              <h4>Tickets</h4>
+              <p>
+                Tickets are for students in grades 2-5 (ages 7-11) only.
+              </p>
+            </div>
+            <div class="question">
+              <h4>Drop Off</h4>
+              <p>
+                The camp is a drop off camp.
+              </p>
+              <p>
+                Parents are encouraged to stay if they’d like,
+                however they will not be able to participate
+                in the activities.
+              </p>
+            </div>
+            <div class="question">
+              <h4>Registration</h4>
+              <p>
+                Registration starts at 9:30am and ends at 9:50am
+              </p>
+              <p>
+                Please read through the Participation Waiver and Photography Waiver below before purchasing tickets.
+              </p>
+              <p>
+                Tickets must only be purchased by students who accept the terms for both waivers.
+              </p>
+            </div>
+            <div class="question">
+              <h4>Food</h4>
+              <p>
+                There will be no food provided at the event.
+              </p>
+              <p>
+                Bottled water and water stations will be available for students to use.
+              </p>
+            </div>
+            <div class="question">
+              <h4>Pick Up</h4>
+              <p>
+                The activities will end at 12pm and the students will be ready for pick up.
+              </p>
+              <p>
+                Parents should be ready to pick up by 12:15pm latest.
+              </p>
+              <p>
+                Volunteers will not be expected to stay after 12:15pm.
+              </p>
+            </div>
+
+
+
+          </div>
+          <h2 class="headline">Frequently Asked Questions</h2>
+          <div>
+            <div class="question">
+              <h4>What's the schedule like for each event?</h4>
+              <p>
+                Each event will start at 10am and end at 12pm.
+                Students will be working on various individual
+                and group based projects throughout the events.
+                For more information, check the schedule for each event above.
+              </p>
+            </div>
+            <div class="question">
+              <h4>Who can buy tickets?</h4>
+              <p>
+                The BitQuest program is for students in grades 2-5.
+                Only students with official tickets approved by
+                Bit Project will be allowed to join the program
+                and participate in the activities.
+              </p>
+            </div>
+            <div class="question">
+              <h4>Can I get a refund?</h4>
+              <p>
+                There will be no refunds once the tickets are bought.
+                The tickets are for the full 5 week program and missing events will not result in money back.
+              </p>
+            </div>
+            <div class="question">
+              <h4>How can I enroll my child in BitQuest?</h4>
+              <p>
+                Apply now.
+              </p>
+            </div>
+            <div class="question">
+              <h4>How much does the BitQuest program cost?</h4>
+              <p>
+                Tier 1: Tickets bought before the first free event (tentative date - January 14th)
+                can be purchased at $250 per student for the full 5 week (10 event) program.*
+              </p>
+              <p>
+                Tier 2: Tickets bought after the first free event will
+                cost $350 per student for the full 5 week (10 event) program.*
+              </p>
+              <p>
+                * We do not sell tickets per event.
+              </p>
+            </div>
+            <div class="question">
+              <h4>Where is it located?</h4>
+              <p>
+                BitQuest W20 will be held in Kemper Hall of Engineering.
+                More information will be provided after purchasing tickets.
+              </p>
+            </div>
+            <div class="question">
+              <h4>Will there be food/drinks?</h4>
+              <p>
+                Bit Project will be providing bottled water for students.
+                Students are encouraged to bring their own food if they’d like to.
+              </p>
+            </div>
+            <div class="question">
+              <h4>How can I support Bit Project?</h4>
+              <p>
+                Whatever makes you comfortable!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="text-section small-margin">
+        <p class="text-section__name">Contact:</p>
+        <div class="text-section__main">
+          <p class="subtitle no-margin">Shreya Gupta, shreya@projectbit.org</p>
+          <div class="bp-logo-wrapper">
+            <a target="_" href="https://calblueprint.org/" class="bp-logo main">
+              <p>Hosted by </p>
+              <img src="./files1/logo1.png">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+</body></html>
