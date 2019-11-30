@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)https://h4sis.calblueprint.org/ -->
+
+<html class="gr__h4sis_calblueprint_org"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>BitQuest by Bit Project</title>
+        <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+
+    <link href="./files1/css" rel="stylesheet">
+    <link href="./files1/styles.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./files1/logo.png">
+    <script>
+      function switchTab(num, type) {
+        const [buttons] = document.getElementsByClassName("tab-buttons--" + type);
+        const [tabContents] = document.getElementsByClassName("tab-content--" + type);
+
+        for (let i = 0; i < buttons.children.length; i++) {
+          if (i === num) {
+            buttons.children[i].className = "tab-button tab-button--active";
+            tabContents.children[i].className = "tab-content tab-content--active";
+          } else {
+            buttons.children[i].className = "tab-button";
+            tabContents.children[i].className = "tab-content";
+          }
+        }
+      }
+
+      function checkSticky() {
+        const [navbar] = document.getElementsByTagName("nav");
+
+        if (window.pageYOffset > 0) {
+          navbar.classList.add("nav--fixed")
+        } else {
+          navbar.classList.remove("nav--fixed");
+        }
+      }
+
+      // When the user scrolls the page, execute myFunction
+      window.onscroll = checkSticky;
+    </script>
+  </head>
+  <body data-gr-c-s-loaded="true" style="zoom: 1;">
+    <nav>
+      <div class="nav-content">
+        <a href="https://quest.bitproject.org/#" class="logo">
+          <img src="./files1/logo.png">
+        </a>
+        <div class="links">
+          <a class="nav-link" href="index.htm#about">About</a>
+          <a class="nav-link" href="https://airtable.com/shrb36iOuof5Phk2k" target="_blank">Register</a>
+          <a class="nav-link" href="index.htm#schedule">Schedule</a>
+          <a class="nav-link" href="index.htm#faq">FAQ</a>
+          <a class="nav-link" href="participation.htm">Participation</a>
+          <a class="nav-link" href="photography.htm">Photography</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="content">
+      <a name="#"></a>
+      <div class="landing-wrapper">
+        <div class="landing">
+          <div class="caption">
+            <p>Jan-Feb 2020</p>
+          </div>
+          <h1 class="landing-title">BitQuest</h1>
+          <p class="landing-title">After School Hands-on STEM Program</p>
+          <a target="_" href="https://bitproject.org/" class="bp-logo">
+            <p>Hosted by </p>
+            <img src="./files1/logo1.png">
+          </a>
+        </div>
+      </div>
+
+      <div class="image-text-section">
+        <div class="image-text-section__content">
+          <h2 class="headline">Participation Permission</h2>
+          <p class="paragraph">
+            I understand that there are risks and dangers inherent in participating and/or receiving instruction in BitQuest. I also understand that in order to be allowed to participate and/or receive instruction in BitQuest, I must give up my rights to hold University of California Davis (UCD) Bit Project liable for any injury or damage which the participating minor child or dependent adult may suffer while participating and/or receiving instruction in BitQuest.
+            <br><br>Knowing this, and in consideration of being permitted to participate and/or receive instruction in BitQuest, I hereby voluntarily release UCD Bit Project and its officers and volunteers from any and all liability resulting from or arising out of my participation and/or receipt of instruction in activity.
+            <br><br>I understand and agree that by agreeing to this Waiver/Release, I am assuming full responsibility for any and all risk suffered by the participating minor child or dependent adult while participating and/or receiving instruction in BitQuest.
+            <br><br>I understand that there will be dairy products and allergens present in certain foods and am aware of the potential allergic reactions associated with them.
+            <br><br>I acknowledge that I have read this Waiver/Release Agreement and that I understand the words and language in it. I have been advised of the potential dangers incidental to participating and/or receiving instruction in BitQuest.
+
+          </p>
+        </div>
+      </div>
+
+</body></html>

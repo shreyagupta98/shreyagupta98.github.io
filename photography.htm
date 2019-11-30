@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)https://h4sis.calblueprint.org/ -->
+
+<html class="gr__h4sis_calblueprint_org"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>BitQuest by Bit Project</title>
+        <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+
+    <link href="./files1/css" rel="stylesheet">
+    <link href="./files1/styles.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./files1/logo.png">
+    <script>
+      function switchTab(num, type) {
+        const [buttons] = document.getElementsByClassName("tab-buttons--" + type);
+        const [tabContents] = document.getElementsByClassName("tab-content--" + type);
+
+        for (let i = 0; i < buttons.children.length; i++) {
+          if (i === num) {
+            buttons.children[i].className = "tab-button tab-button--active";
+            tabContents.children[i].className = "tab-content tab-content--active";
+          } else {
+            buttons.children[i].className = "tab-button";
+            tabContents.children[i].className = "tab-content";
+          }
+        }
+      }
+
+      function checkSticky() {
+        const [navbar] = document.getElementsByTagName("nav");
+
+        if (window.pageYOffset > 0) {
+          navbar.classList.add("nav--fixed")
+        } else {
+          navbar.classList.remove("nav--fixed");
+        }
+      }
+
+      // When the user scrolls the page, execute myFunction
+      window.onscroll = checkSticky;
+    </script>
+  </head>
+  <body data-gr-c-s-loaded="true" style="zoom: 1;">
+    <nav>
+      <div class="nav-content">
+        <a href="https://quest.bitproject.org/#" class="logo">
+          <img src="./files1/logo.png">
+        </a>
+        <div class="links">
+          <a class="nav-link" href="index.htm#about">About</a>
+          <a class="nav-link" href="https://airtable.com/shrb36iOuof5Phk2k" target="_blank">Register</a>
+          <a class="nav-link" href="index.htm#schedule">Schedule</a>
+          <a class="nav-link" href="index.htm#faq">FAQ</a>
+          <a class="nav-link" href="participation.htm">Participation</a>
+          <a class="nav-link" href="photography.htm">Photography</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="content">
+      <a name="#"></a>
+      <div class="landing-wrapper">
+        <div class="landing">
+          <div class="caption">
+            <p>Jan-Feb 2020</p>
+          </div>
+          <h1 class="landing-title">BitQuest</h1>
+          <p class="landing-title">After School Hands-on STEM Program</p>
+          <a target="_" href="https://bitproject.org/" class="bp-logo">
+            <p>Hosted by </p>
+            <img src="./files1/logo1.png">
+          </a>
+        </div>
+      </div>
+
+      <div class="image-text-section">
+        <div class="image-text-section__content">
+          <h2 class="headline">Photography Permission</h2>
+          <p class="paragraph">
+            I hereby grant permission to Bit Project and its assigns and licensees to take
+            photographs or videos of the participating minor child or dependent adult,
+            and to make recordings of the participating minor child’s or dependent adult’s voice.
+            <br><br>I give unrestricted permission for images, videos, and recordings of my
+            child or dependent to be used in print, video, digital and internet media.
+            I agree that these images and/or voice recordings may be used by for a variety
+            of purposes and that these images may be used without further notifying me. I understand
+            that the child’s or dependent’s name not be used in conjunction with any video or digital images.
+            <br><br>By GRANTING permission, I am giving Bit Project permission to use these images,
+            videos, and recordings, as well as the participating minor child or dependent adult’s
+            likeness and voice within the bound of those directives, as follows:
+            <br><br>The use may include reproduction, distribution, derivative works, display, and
+            performance, both private and public.
+            <br><br>The use may be in composite or modified forms and in any media, now known or later developed,
+            including without limitation newspapers, television, radio, the World Wide Web, and social media.
+            <br><br>The use may be for any purpose throughout the world and in perpetuity, including,
+            without limitation, education, trade, advertising, and promotion.
+            <br><br>I further acknowledge that I will not be compensated for these uses, and that Bit Project
+            exclusively owns all rights to the images, videos, and recordings, and to any derivative works created from them.
+            <br><br>I waive the right to inspect or approve the uses of any printed or electronic copy. I
+            hereby release Bit Project and its assigns and licensees from any claims that may arise
+            from these uses, including without limitation claims of defamation or invasion of privacy,
+            or of infringement of moral rights or rights of publicity or copyright.
+            <br><br>This Release is binding on me, my heirs, assigns, and estate. Bit Project is
+            not obligated to use any of the rights granted under this Release.
+            <br><br>This Release expresses the complete understanding of the parties.
+          </p>
+        </div>
+      </div>
+
+</body></html>
